@@ -1,4 +1,8 @@
 import starbucksLogo from "../../images/starbucks_logo.png";
+import MainMenuItem from "./MainMenuItem";
+import { headerData } from "../../data/data";
+import Badges from "./Badges";
+import "../../css/header.css";
 
 const Header = () => {
     return (
@@ -28,9 +32,12 @@ const Header = () => {
                     </div>
                 </div>
                 <ul className="main-menu">
-                    
+                    {
+                        headerData.map((item,index) => <MainMenuItem name={item.name} contents={item.contents} textureContents={item.textureContents} />)
+                    }
                 </ul>
             </div>
+            <Badges/>
         </header>
     );
 };
