@@ -6,8 +6,19 @@ import text1 from "../../images/visual_cup1_text.png";
 import cup2 from "../../images/visual_cup2.png";
 import text2 from "../../images/visual_cup2_text.png";
 import spoon from "../../images/visual_spoon.png";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const VisualSection = () => {
+  useEffect(() => {
+    const fadeEls = document.querySelectorAll('.visual .fade-in');
+    fadeEls.forEach((item,index) => {
+      gsap.fromTo(item, {opacity: 0}, {
+        delay: (index + 1) * .7,
+        opacity: 1
+      });
+    });
+  },[]);
   return (
     <div className="visual">
       <div className="inner">
