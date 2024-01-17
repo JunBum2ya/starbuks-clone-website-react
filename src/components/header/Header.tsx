@@ -1,4 +1,4 @@
-import starbucksLogo from "../images/starbucks_logo.png";
+import starbucksLogo from "../../images/starbucks_logo.png";
 
 const Header = () => {
     return (
@@ -27,6 +27,9 @@ const Header = () => {
                         <div className="material-icons">search</div>
                     </div>
                 </div>
+                <ul className="main-menu">
+                    
+                </ul>
             </div>
         </header>
     );
