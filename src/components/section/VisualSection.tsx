@@ -20,7 +20,7 @@ const VisualSection = () => {
     });
   },[]);
   return (
-    <div className="visual">
+    <section className="visual">
       <div className="inner">
         <div className="title fade-in">
           <img src={titleImage} alt="STARBUCKS DELIGHTFUL START TO THE YEARS"/>
@@ -38,7 +38,7 @@ const VisualSection = () => {
         <img className="spoon" src={spoon} alt="Spoon"/>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
