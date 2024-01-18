@@ -33,7 +33,7 @@ const Header = () => {
                 </div>
                 <ul className="main-menu">
                     {
-                        headerData.map((item,index) => <MainMenuItem name={item.name} contents={item.contents} textureContents={item.textureContents} />)
+                        headerData.map((item,index) => <MainMenuItem key={`item-${index}`} name={item.name} contents={item.contents} textureContents={item.textureContents} />)
                     }
                 </ul>
             </div>
