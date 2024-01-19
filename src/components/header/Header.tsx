@@ -3,6 +3,8 @@ import MainMenuItem from "./MainMenuItem";
 import { headerData } from "../../data/data";
 import Badges from "./Badges";
 import "../../css/header.css";
+import MaterialIcon from "../MaterialIcon";
+import { useRef, useState } from "react";
 
 const Header = () => {
     return (
@@ -26,10 +28,7 @@ const Header = () => {
                             <a href="#none">Find Store</a> 
                         </li>
                     </ul>
-                    <div className="search">
-                        <input type="text"/>
-                        <div className="material-icons">search</div>
-                    </div>
+                    <SearchArea/>
                 </div>
                 <ul className="main-menu">
                     {
@@ -39,6 +38,30 @@ const Header = () => {
             </div>
             <Badges/>
         </header>
+    );
+};
+
+const SearchArea = () => {
+
+    const [focused, setFocused] = useState(false);
+    const searchRef = useRef<HTMLInputElement>(null);
+    const handleClick = (event: any) => {
+        searchRef.current?.focus();
+    }
+
+    const handleFocus = () => {
+        setFocused(it => !it);
+    }
+
+    const handleBlur = () => {
+        setFocused(it => !it);
+    }
+
+    return (
+        <div className="search" onClick={handleClick}>
+            <input className={focused ? "focused" : ""} placeholder={focused ? "통합검색" : ""} ref={searchRef} type="text" onFocus={handleFocus} onBlur={handleBlur}/>
+            <MaterialIcon>search</MaterialIcon>
+        </div>
     );
 };
 
