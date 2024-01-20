@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useMemo } from 'react';
+import React, { useRef, useEffect, useMemo, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -13,6 +13,8 @@ import promotionImage5 from '../../images/promotion_slide5.jpg';
 import MaterialIcon from '../MaterialIcon';
 
 const NoticeSection = () => {
+  const [hide, setHide] = useState(false);
+
   return (
     <section className="notice">
       <div className="notice-line">
@@ -32,13 +34,13 @@ const NoticeSection = () => {
           </div>
           <div className="inner__right">
             <h2>스타벅스 프로모션</h2>
-            <div className="toggle-promotion">
+            <div className="toggle-promotion" onClick={() => setHide(it => !it)}>
               <div className="material-icons">add_circle</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="promotion">
+      <div className={`promotion${hide ? " hide" : ""}`}>
         <PromotionSwiper/>
       </div>
     </section>
