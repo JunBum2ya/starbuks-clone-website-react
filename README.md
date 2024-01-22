@@ -8,4 +8,6 @@
   2. 프레임워크 : react
   3. 배포 : gh-pages
 ## 기능
-  1. 
+  1. swiper
+  2. scroll spy
+  3. 애니메이션
