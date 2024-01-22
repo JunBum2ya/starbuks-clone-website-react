@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/starbuks-clone-website-react/static/css/main.91d9ad12.css",
-    "main.js": "/starbuks-clone-website-react/static/js/main.58f9501c.js",
+    "main.js": "/starbuks-clone-website-react/static/js/main.e7fadab3.js",
     "static/js/787.f7fa8a66.chunk.js": "/starbuks-clone-website-react/static/js/787.f7fa8a66.chunk.js",
     "static/media/reserve_store_bg.jpg": "/starbuks-clone-website-react/static/media/reserve_store_bg.d7ace70e777d02b9bb81.jpg",
     "static/media/favorite_bg.jpg": "/starbuks-clone-website-react/static/media/favorite_bg.044ffc5e1285130d3257.jpg",
@@ -37,11 +37,11 @@
     "static/media/reserve_store_medal_front.png": "/starbuks-clone-website-react/static/media/reserve_store_medal_front.6515a0c8f3c981f77be4.png",
     "index.html": "/starbuks-clone-website-react/index.html",
     "main.91d9ad12.css.map": "/starbuks-clone-website-react/static/css/main.91d9ad12.css.map",
-    "main.58f9501c.js.map": "/starbuks-clone-website-react/static/js/main.58f9501c.js.map",
+    "main.e7fadab3.js.map": "/starbuks-clone-website-react/static/js/main.e7fadab3.js.map",
     "787.f7fa8a66.chunk.js.map": "/starbuks-clone-website-react/static/js/787.f7fa8a66.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91d9ad12.css",
-    "static/js/main.58f9501c.js"
+    "static/js/main.e7fadab3.js"
   ]
 }
