@@ -11,6 +11,7 @@ import { floatObject } from './util/util';
 import FickYourFavoriteSection from './components/section/FickYourFavoriteSection';
 import ReserveStoreSection from './components/section/ReserveStoreSection';
 import FindStoreSection from './components/section/FindStoreSection';
+import AwardsSection from './components/section/AwardsSection';
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       <FickYourFavoriteSection/>
       <ReserveStoreSection/>
       <FindStoreSection/>
+      <AwardsSection/>
     </>
   );
 }
