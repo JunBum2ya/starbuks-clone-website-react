@@ -12,6 +12,7 @@ import FickYourFavoriteSection from './components/section/FickYourFavoriteSectio
 import ReserveStoreSection from './components/section/ReserveStoreSection';
 import FindStoreSection from './components/section/FindStoreSection';
 import AwardsSection from './components/section/AwardsSection';
+import Footer from './components/footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
       <ReserveStoreSection/>
       <FindStoreSection/>
       <AwardsSection/>
+      <Footer/>
     </>
   );
 }
