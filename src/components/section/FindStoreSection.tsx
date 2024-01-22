@@ -5,26 +5,12 @@ import picture2 from "../../images/find_store_picture2.jpg";
 import title from "../../images/find_store_text1.png";
 import description from "../../images/find_store_text2.png";
 import CustomButton from "../CustomButton";
-import { useEffect, useRef } from "react";
+import ScrollSpySection from "./ScrollSpySection";
 
 const FindStoreSection = () => {
 
-  const sectionRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const handleScroll = () => {
-      const top = sectionRef.current?.offsetTop;
-      const scrollPosition = window.scrollY;
-      if(scrollPosition + 400 >= (top??-1)) {
-        sectionRef.current?.classList.add("show");
-      }else {
-        sectionRef.current?.classList.remove("show");
-      }
-    }
-    window.addEventListener("scroll",handleScroll);
-  },[]);
-
   return (
-    <section className="find-store scroll-spy" ref={sectionRef}>
+    <ScrollSpySection classList={["find-store"]}>
       <div className="inner">
         <img className="texture1" src={texture1} alt="TEXTURE"/>
         <img className="texture2" src={texture2} alt="TEXTURE"/>
@@ -38,7 +24,7 @@ const FindStoreSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </ScrollSpySection>
   );
 };
 
