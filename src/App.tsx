@@ -9,6 +9,7 @@ import ReserveCoffeeSection from './components/section/ReserveCoffeeSection';
 import SeasonProductSection from './components/section/SeasonProductSection';
 import { floatObject } from './util/util';
 import FickYourFavoriteSection from './components/section/FickYourFavoriteSection';
+import ReserveStoreSection from './components/section/ReserveStoreSection';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <SeasonProductSection/>
       <ReserveCoffeeSection/>
       <FickYourFavoriteSection/>
+      <ReserveStoreSection/>
     </>
   );
 }
