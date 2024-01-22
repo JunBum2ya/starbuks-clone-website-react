@@ -8,6 +8,7 @@ import YoutbueSection from './components/section/YoutubeSection';
 import ReserveCoffeeSection from './components/section/ReserveCoffeeSection';
 import SeasonProductSection from './components/section/SeasonProductSection';
 import { floatObject } from './util/util';
+import FickYourFavoriteSection from './components/section/FickYourFavoriteSection';
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
       <YoutbueSection/>
       <SeasonProductSection/>
       <ReserveCoffeeSection/>
+      <FickYourFavoriteSection/>
     </>
   );
 }
