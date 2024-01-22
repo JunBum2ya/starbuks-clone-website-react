@@ -1,10 +1,8 @@
 import { useEffect, useRef } from "react"
-import _ from 'lodash';
 
 const ScrollSpySection = (props: ScrollSpySectionProps) => {
   const sectionRef = useRef<HTMLElement>(null);
   useEffect(() => {
-    _.
     const handleScroll = () => {
       const top = sectionRef.current?.offsetTop;
       const scrollPosition = window.scrollY;
@@ -14,7 +12,6 @@ const ScrollSpySection = (props: ScrollSpySectionProps) => {
         sectionRef.current?.classList.remove("show");
       }
     }
-    _.
     window.addEventListener("scroll",handleScroll);
   },[]);
 
